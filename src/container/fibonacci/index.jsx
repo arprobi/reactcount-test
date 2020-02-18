@@ -26,9 +26,19 @@ export default class extends Component {
 
     getFibonacci() {
         const { number } = this.state
-        let result = [0, 1];
-        for (let i=2; i<number + 1; i++) {
-            result.push(result[i-2] + result[i-1])
+        let result = [],
+            start  = 0,
+            getfib = 0
+        
+        while (getfib < number) {
+            if (start <= 1) {
+                result.push(start)
+                getfib++
+            } else {
+                result.push(result[start-2] + result[start-1])
+                getfib++
+            }
+            start++
         }
         this.setState({ result: result }, () => { console.log('submited', this.state) })
     }
