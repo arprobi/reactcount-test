@@ -39,7 +39,7 @@ export default class extends Component {
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">Fibonacci</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Showing first "n" fibonacci</h6>
+                    <h6 className="card-subtitle mb-2 text-muted mb-3">Showing first "n" fibonacci</h6>
                     <div className="form-row">
                         <div className="form-group col">
                             <input name="number" type="text" className="form-control" placeholder="n prime number" onChange={this.handleChange}/>

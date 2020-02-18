@@ -5,7 +5,7 @@ export default class extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            result: 0
+            result: ''
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -34,7 +34,7 @@ export default class extends Component {
         return (
             <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title">Sum</h5>
+                    <h5 className="card-title mb-3">Sum</h5>
                     <div className="form-row">
                         <div className="form-group col">
                             <input name="first" type="text" className="form-control" placeholder="First number" onChange={this.handleChange}/>
@@ -42,7 +42,7 @@ export default class extends Component {
                         <div className="form-group col">
                             <input name="second" type="text" className="form-control" placeholder="Second number" onChange={this.handleChange}/>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group ml-1">
                             <button type="button" className="btn btn-primary" onClick={ this.handleSubmit }>Check</button>
                         </div>
                     </div>

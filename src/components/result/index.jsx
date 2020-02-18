@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class extends Component {
     render() {
-        const { data=0 } = this.props
+        const { data='' } = this.props
         return (
             <div>
                 { Array.isArray(data) ? (

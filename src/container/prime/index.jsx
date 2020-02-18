@@ -58,7 +58,7 @@ export default class extends Component {
                 <div className="card-body">
                     <h5 className="card-title">Prime Number</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Showing first "n" prime number</h6>
-                    <div className="form-row">
+                    <div className="form-row mb-3">
                         <div className="form-group col">
                             <input name="number" type="text" className="form-control" placeholder="n prime number" onChange={this.handleChange}/>
                         </div>

@@ -1,21 +1,23 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import Menu from '../components/menu'
 import Header from '../components/header'
 
 const Applayout = ({children}) => {
-    return (  
-        <div className="container">
+    return (
+        <Fragment>
             <Header/>
-            <div className="row content">
-                <div className="col-md-8">
-                    { children }
-                </div>
-                <div className="col-md-4">
-                    <Menu/>
+            <div className="container">
+                <div className="row content">
+                    <div className="col-md-3">
+                        <Menu/>
+                    </div>
+                    <div className="col-md-9">
+                        { children }
+                    </div>
                 </div>
             </div>
-        </div>
+        </Fragment>
     )  
 }
 
