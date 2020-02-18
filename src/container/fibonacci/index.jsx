@@ -10,7 +10,7 @@ export default class extends Component {
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.multiplyNumber    = this.multiplyNumber.bind(this)
+        this.getFibonacci    = this.getFibonacci.bind(this)
     }
 
     handleChange(e) {
@@ -21,23 +21,16 @@ export default class extends Component {
     }
 
     handleSubmit() {
-        this.multiplyNumber()
+        this.getFibonacci()
     }
 
-    multiplyNumber() {
+    getFibonacci() {
         const { number } = this.state
-        var primes = [],
-            store  = [],
-            i, j
-        for (i=2; i<=number; i++) {
-            if (!store[i]) {
-                primes.push(i);
-                for (j=i <<1; j<=number; j+=i) {
-                    store[j] = true;
-                }
-            }
+        let result = [0, 1];
+        for (let i=2; i<number + 1; i++) {
+            result.push(result[i-2] + result[i-1])
         }
-        this.setState({ result: primes }, () => { console.log('submited', this.state) })
+        this.setState({ result: result }, () => { console.log('submited', this.state) })
     }
 
     render() {

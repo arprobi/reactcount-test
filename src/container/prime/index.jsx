@@ -10,7 +10,7 @@ export default class extends Component {
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.multiplyNumber    = this.multiplyNumber.bind(this)
+        this.getPrimeNumber    = this.getPrimeNumber.bind(this)
     }
 
     handleChange(e) {
@@ -21,22 +21,33 @@ export default class extends Component {
     }
 
     handleSubmit() {
-        this.multiplyNumber()
+        this.getPrimeNumber()
     }
 
-    multiplyNumber() {
-        const { number } = this.state
-        var primes = [],
-            store  = [],
-            i, j
-        for (i=2; i<=number; i++) {
-            if (!store[i]) {
-                primes.push(i);
-                for (j=i <<1; j<=number; j+=i) {
-                    store[j] = true;
-                }
+    checkIsPrime(number) {
+        for (var i=2 ; i<=Math.sqrt(number) ; i++){
+            if (number%i === 0){
+                return false
             }
         }
+        return true
+    }
+
+    getPrimeNumber() {
+        const { number } = this.state
+        var primes      = [],
+            getprime    = 0,
+            start       = 1
+
+        while (getprime < number) {
+            if (this.checkIsPrime(start)) {
+                primes.push(start)
+                getprime++
+            }
+            start++
+            console.log(`get prime = ${getprime}, start = ${start}`)
+        }
+
         this.setState({ result: primes }, () => { console.log('submited', this.state) })
     }
 
