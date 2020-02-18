@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Result from '../../components/result'
+import Title from '../../components/title'
 
 export default class extends Component {
     constructor(props) {
@@ -56,9 +57,8 @@ export default class extends Component {
         return (
             <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title">Prime Number</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Showing first "n" prime number</h6>
-                    <div className="form-row mb-3">
+                    <Title title={`Primes Number`} subtitle={`Showing first "n" prime number`} />
+                    <div className="form-row">
                         <div className="form-group col">
                             <input name="number" type="text" className="form-control" placeholder="n prime number" onChange={this.handleChange}/>
                         </div>

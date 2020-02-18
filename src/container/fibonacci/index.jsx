@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Title from '../../components/title'
 import Result from '../../components/result'
 
 export default class extends Component {
@@ -48,8 +49,7 @@ export default class extends Component {
         return (
             <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title">Fibonacci</h5>
-                    <h6 className="card-subtitle mb-2 text-muted mb-3">Showing first "n" fibonacci</h6>
+                    <Title title={`Fibonacci`} subtitle={`Showing first "n" fibonacci`} />
                     <div className="form-row">
                         <div className="form-group col">
                             <input name="number" type="text" className="form-control" placeholder="n prime number" onChange={this.handleChange}/>

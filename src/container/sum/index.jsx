@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Result from '../../components/result'
+import Title from '../../components/title'
 
 export default class extends Component {
     constructor(props) {
@@ -34,7 +35,7 @@ export default class extends Component {
         return (
             <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title mb-3">Sum</h5>
+                    <Title title={`Addition`} subtitle={`Sum the first with the second input`} />
                     <div className="form-row">
                         <div className="form-group col">
                             <input name="first" type="text" className="form-control" placeholder="First number" onChange={this.handleChange}/>

@@ -5,7 +5,7 @@ export default class extends Component {
         return (
             <nav className="navbar navbar-light bg-blue">
                 <div className="container">
-                    <span className="navbar-brand mb-0 h1">AR</span>
+                    <span className="navbar-brand mb-0 h1">Logo</span>
                 </div>
             </nav>
         )
