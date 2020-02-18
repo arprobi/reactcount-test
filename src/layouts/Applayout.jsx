@@ -7,7 +7,7 @@ const Applayout = ({children}) => {
     return (  
         <div className="container">
             <Header/>
-            <div className="row">
+            <div className="row content">
                 <div className="col-md-8">
                     { children }
                 </div>

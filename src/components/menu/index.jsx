@@ -6,10 +6,10 @@ export default class extends Component {
     render() {
         return (
             <nav className="nav flex-column">
-                <Link className="nav-link" to="/sum">Menu 1</Link>
-                <Link className="nav-link" to="/multiply">Menu 2</Link>
-                <Link className="nav-link" to="/fibonacci">Menu 3</Link>
-                <Link className="nav-link" to="/prime">Menu 4</Link>
+                <Link className="nav-link" to="/sum">Sum</Link>
+                <Link className="nav-link" to="/multiply">Multiply</Link>
+                <Link className="nav-link" to="/fibonacci">Fibonacci</Link>
+                <Link className="nav-link" to="/prime">Prime</Link>
             </nav>
         )
     }
