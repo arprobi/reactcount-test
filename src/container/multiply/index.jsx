@@ -33,7 +33,7 @@ export default class extends Component {
     render() {
         const { result } = this.state
         return (
-            <div className="card">
+            <div className="card shadow">
                 <div className="card-body">
                     <Title title={`Multiply`} subtitle={`Multiply the first with the second input`} />
                     <div className="form-row">

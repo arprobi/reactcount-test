@@ -6,9 +6,9 @@ export default class extends Component {
         return (
             <div>
                 { Array.isArray(data) ? (
-                    <h6>Result : { data.map((item, i) => { return i === (data.length-1) ? `${item}` : `${item}, ` }) }</h6>
+                    <h6>Result : <b className="text-primary">{ data.map((item, i) => { return i === (data.length-1) ? `${item}` : `${item}, ` }) }</b></h6>
                 ) : (
-                    <h6>Result : { data }</h6>
+                    <h6>Result : <b className="text-primary">{ data }</b></h6>
                 ) }
             </div>
         )

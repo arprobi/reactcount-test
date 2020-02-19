@@ -47,12 +47,12 @@ export default class extends Component {
     render() {
         const { result } = this.state
         return (
-            <div className="card">
+            <div className="card shadow">
                 <div className="card-body">
                     <Title title={`Fibonacci`} subtitle={`Showing first "n" fibonacci`} />
                     <div className="form-row">
                         <div className="form-group col">
-                            <input name="number" type="text" className="form-control" placeholder="n prime number" onChange={this.handleChange}/>
+                            <input name="number" type="text" className="form-control" placeholder="input n fibonacci number" onChange={this.handleChange}/>
                         </div>
                         <div className="form-group">
                             <button type="button" className="btn btn-primary" onClick={ this.handleSubmit }>Check</button>

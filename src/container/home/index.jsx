@@ -4,7 +4,7 @@ export default class extends Component {
 
     render() {
         return (
-            <div className="jumbotron">
+            <div className="jumbotron shadow">
                 <h1 className="display-4">Hello, world!</h1>
                 <p className="lead">Welcome to my Web Developer Test Application, please select the left menu to start</p>
                 <hr className="my-4" />
