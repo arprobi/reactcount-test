@@ -33,7 +33,7 @@ export default class extends Component {
     render() {
         const { result } = this.state
         return (
-            <div className="card">
+            <div className="card shadow-sm">
                 <div className="card-body">
                     <Title title={`Addition`} subtitle={`Sum the first with the second input`} />
                     <div className="form-row">

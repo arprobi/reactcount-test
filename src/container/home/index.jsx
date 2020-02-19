@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class extends Component {
 
@@ -13,6 +13,6 @@ export default class extends Component {
                     <a className="btn btn-info btn-lg" rel="noopener noreferrer" href="https://id.linkedin.com/in/andrian-robby-pratama-786401137" target="_blank" role="button">Click!</a>
                 </p>
             </div>
-        );
+        )
     }
 }

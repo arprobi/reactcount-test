@@ -9,8 +9,15 @@ hr {
 }
 .navbar-light .navbar-brand {
     color: white;
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Cabin Sketch', cursive;
     font-size: 30px;
+}
+.menu {
+    font-weight: 700;
+}
+.menu-link{
+    text-decoration: none;
+    color: rgb(0, 174, 239) !important;
 }
 .jumbroton {
     background: none;
